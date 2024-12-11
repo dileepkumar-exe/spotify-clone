@@ -1,40 +1,48 @@
-body{
+/* General Styles */
+body {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
     background-color: #000;
     color: #fff;
     overflow: hidden;
 }
-.main{
+
+.main {
     display: flex;
     height: 100vh;
     padding: 0.5rem;
 }
-.sidebar{
-    background-color:#000;
+
+.sidebar {
+    background-color: #000;
     width: 340px;
     border-radius: 1rem;
     margin: 0.5rem;
 }
-.main-content{
+
+.main-content {
     background-color: #121212;
     flex: 1;
     border-radius: 1rem;
     overflow: auto;
     padding: 0 1.5rem 0 1.5rem;
 }
-.music-player{
-    background-color:#121212;
+
+.music-player {
+    background-color: #121212;
     position: fixed;
     bottom: 0;
     width: 100%;
     height: 72px;
 }
-a{
+
+a {
     text-decoration: none;
     color: white;
 }
-.nav{
+
+/* Navigation */
+.nav {
     background-color: #121212;
     border-radius: 1rem;
     display: flex;
@@ -43,69 +51,80 @@ a{
     height: 100px;
     padding: 0.5rem 0.75rem;
 }
-.nav-option{
+
+.nav-option {
     line-height: 2.5rem;
     opacity: 0.7;
     padding: 0.5rem 0.75rem;
-
 }
-.nav-option:hover{
-    line-height: 2.5rem;
+
+.nav-option:hover {
     opacity: 1;
 }
-.nav-option i{
+
+.nav-option i {
     font-size: 1.25rem;
 }
-.nav-option a{
+
+.nav-option a {
     font-size: 1rem;
     margin-left: 1rem;
 }
-.library{
+
+/* Library */
+.library {
     background-color: #121212;
     border-radius: 1rem;
     height: 100%;
     margin-top: 0.5rem;
-    padding:0.5rem 0.75rem;
-
+    padding: 0.5rem 0.75rem;
 }
-.options{
+
+.options {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.lib-option img{
-    height:1.25rem;
-    width: 1.25rem;
 
+.lib-option img {
+    height: 1.25rem;
+    width: 1.25rem;
 }
-.icons{
+
+.icons {
     font-size: 1.25rem;
     display: flex;
-   
 }
-.icons i{
+
+.icons i {
     opacity: 0.7;
     margin-right: 1rem;
 }
-.icons i:hover{
+
+.icons i:hover {
     opacity: 1;
-} 
-.box{
+}
+
+/* Boxes */
+.box {
     background-color: #232323;
     height: 8rem;
     border-radius: 0.75rem;
     margin: 0.75rem 0 1.75rem 0;
     padding: 0.75rem 1.25rem;
 }
-.box-p1{
+
+.box-p1 {
     font-size: 1rem;
     font-weight: 500;
 }
-.box-p2{
+
+.box-p2 {
     font-size: 0.85rem;
     opacity: 0.9;
 }
-.badge{
+
+.badge {
     background-color: #fff;
     border: none;
     border-radius: 100px;
@@ -115,38 +134,41 @@ a{
     height: 2rem;
     width: fit-content;
 }
-.stickynav{
+
+/* Sticky Navigation */
+.stickynav {
     position: sticky;
     top: 0;
     background-color: #121212;
-    display:flex;
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
     z-index: 10;
 }
-.sticky-nav-icons img{
+
+.sticky-nav-icons img {
     margin-left: 0.75rem;
 }
-.sticky-nav-buttons{
+
+.sticky-nav-buttons {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.sticky-nav-buttons button{
+
+.sticky-nav-buttons button {
     margin-right: 1rem;
 }
-.dark-badge{
+
+.dark-badge {
     background-color: #000;
     color: #fff;
 }
-@media (max-width:1000px){
-    .hide{
-        display: none;
-    }
-}
-.card{
+
+/* Cards */
+.card {
     background-color: #232323;
     width: 150px;
     border-radius: 0.5rem;
@@ -154,52 +176,63 @@ a{
     margin-left: 1.5rem;
     margin-top: 1rem;
 }
-.cards-container{
-   display: flex;
-   flex-wrap: wrap;
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
 }
-.card-img{
+
+.card-img {
     width: 100%;
     border-radius: 0.5rem;
 }
-.card-title{
+
+.card-title {
     font-weight: 600;
 }
-.card-info{
+
+.card-info {
     font-size: 0.75rem;
     opacity: 0.8;
 }
-.nav-footer{
+
+/* Footer Line */
+.nav-footer {
     height: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.line{
-    height:50%;
+
+.line {
+    height: 50%;
     width: 90%;
-    border-top:1px solid white ;
+    border-top: 1px solid white;
     opacity: 0.4;
 }
-.music-player{
+
+/* Music Player */
+.music-player {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.album{
-    width:25%;
+
+.album {
+    width: 25%;
     display: flex;
     justify-content: flex-start;
     align-items: center;
 }
-.album_picture{
+
+.album_picture {
     height: 4rem;
     width: 4rem;
     border-radius: 1rem;
-    justify-content: flex-start;
     opacity: 1;
 }
-.album_name{
+
+.album_name {
     font-weight: 700;
     font-size: 1rem;
     display: flex;
@@ -207,55 +240,66 @@ a{
     margin-left: 0.85rem;
     opacity: 0.6;
 }
-.album_name:hover{
+
+.album_name:hover {
     opacity: 1;
 }
-.like_icon:hover{
-    opacity: 1;
-}
-.like_icon{
+
+.like_icon {
     margin-left: 0.85rem;
     height: 1.5rem;
     width: 1.5rem;
     opacity: 0.6;
 }
 
-.player{
-    width:50%;
+.like_icon:hover {
+    opacity: 1;
 }
-.controls{
-    width:25%;
+
+.player {
+    width: 50%;
 }
-.player-icon{
+
+.controls {
+    width: 25%;
+}
+
+.player-icon {
     height: 1rem;
     margin-left: 1.75rem;
     opacity: 0.7;
 }
-.player-controls{
+
+.player-controls {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.player-icon:hover{
+
+.player-icon:hover {
     opacity: 1;
 }
-.playback-bar{
+
+.playback-bar {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.progress-bar{
+
+.progress-bar {
     width: 70%;
     appearance: none;
     background-color: transparent;
     cursor: pointer;
 }
-.progress-bar::-webkit-slider-runnable-track{
+
+.progress-bar::-webkit-slider-runnable-track {
     background-color: #ddd;
     border-radius: 100px;
     height: 0.2rem;
 }
-.progress-bar::-webkit-slider-thumb{
+
+.progress-bar::-webkit-slider-thumb {
     appearance: none;
     height: 16px;
     width: 16px;
@@ -263,26 +307,83 @@ a{
     border-radius: 50%;
     margin-top: -6px;
 }
-.controls{
+
+.controls {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     margin-right: 1rem;
 }
-.controls img{
+
+.controls img {
     height: 1.2rem;
     width: 1.2rem;
     margin-right: 0.75rem;
     opacity: 0.65;
 }
-.controls img:hover{
+
+.controls img:hover {
     opacity: 1;
 }
-.vol{
+
+.vol {
     width: 36%;
     margin-right: 1.25rem;
     margin-top: -5px;
 }
-.vol::-webkit-slider-thumb{
+
+.vol::-webkit-slider-thumb {
     appearance: none;
+}
+
+/* Responsive Design */
+@media (max-width: 1000px) {
+    .hide {
+        display: none;
+    }
+
+    .sidebar {
+        display: none;
+    }
+
+    .main {
+        flex-direction: column;
+    }
+
+    .cards-container {
+        justify-content: center;
+    }
+
+    .card {
+        flex: 1 1 calc(50% - 1rem);
+    }
+
+    .music-player {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 768px) {
+    .card {
+        flex: 1 1 calc(100% - 1rem);
+    }
+
+    .music-player {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    .sticky-nav-buttons button {
+        display: none;
+    }
+
+    .cards-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 100%;
+    }
 }
